@@ -89,4 +89,11 @@ class ApiController extends Controller
         return response()->json($student);
 
     }
+
+    public function getstudent()
+    {
+        $student = Student::with('contact')->get();
+        return response()->json($student);
+
+    }
 }
