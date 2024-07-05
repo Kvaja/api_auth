@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Artisan;
 use App\Console\Commands\testing;
 
 use Illuminate\Support\Facades\Schedule;
+use Illuminate\Support\Facades\String;
+
 
 
 Artisan::command('inspire', function () {
