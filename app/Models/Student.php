@@ -8,10 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'age'
+        
+    ];
+
 
    public function contact()
     {
-        return $this->hasMany(Contact::class);
+        return $this->hasOne(Contact::class);
 
     }   
 }

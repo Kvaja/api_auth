@@ -13,4 +13,6 @@ Route::get('/user', function (Request $request) {
 Route::post('/register',[ApiController::class,'register']);
 Route::post('/login',[ApiController::class,'login']);
 
-Route::get('/students',[ApiController::class,'Showstudent']);
+
+
+Route::get('/dashboard',[ApiController::class,'Showstudent'])->middleware(['throttle:api']);
