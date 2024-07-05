@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Artisan;
 use App\Console\Commands\testing;
 
 use Illuminate\Support\Facades\Schedule;
-use Illuminate\Support\Facades\String;
 
 
 
@@ -13,5 +12,4 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote')->hourly();
 
-Schedule::command('app:testing')->eveveryDay();
 
